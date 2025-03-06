@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Movie Entry</h2>
+            <form autocomplete="off" onsubmit="onFormSubmit()">
+                <div class="form-group">
+                    <label for="movieID">Movie ID</label>
+                    <input type="text" name="movieID" id="movieID">
+                </div>
+                <div class="form-group">
+                    <label for="movieName">Movie Name</label>
+                    <input type="text" name="movieName" id="movieName">
+                </div>
+                <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <input type="text" name="genre" id="genre">
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <input type="number" name="rating" id="rating" step="0.1" min="0" max="10">
+                </div>
+
+                <div class="form-action">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>Movie List</h2>
+            <table class="list" id="movieList">
+                <thead>
+                    <tr>
+                        <th>Movie ID</th>
+                        <th>Movie Name</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
